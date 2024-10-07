@@ -50,7 +50,7 @@ func main() {
 
 	for _, file := range dir {
 		fileDir, fileName := filepath.Split(file.Name())
-		ext := filepath.Ext(fileName)
+		ext := match.Ext(fileName)
 		episode, err := _GetEpisodeSerial(fileName)
 		if err != nil {
 			log.Warnf("rename '%s' failed: %v", fileName, err)
