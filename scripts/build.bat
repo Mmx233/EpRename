@@ -1,2 +1,2 @@
 @echo off
-release ./cmd/rename
+release ./cmd/rename -c tar.gz
